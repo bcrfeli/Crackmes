@@ -1,0 +1,16 @@
+The main function scans user input and calls a function called checkPass (00101149),
+this function takes the input as a char *. It declares a char on the 5th line and
+checks if the first letter of our array is an 's': if (*param_1 == 's').
+If it is, it continues, first, it sets the char variable declared on line 5 to the
+element 1 of our array, then it moves into a big if statement that basically does the same thing
+but with different letters at first sight, comparing, in total, 8 characters from our
+array with characters stored in the variable.
+
+(cVar1 = input[2], cVar1 == 'd'): this sets cVar1 to the second character in our
+input and checks it against the character 'd' using a comma operator. It does this until the
+solution: sudo0x18 is complete. If every condition in the if statement is true,
+then we return 1, else we return 0. 
+Going back to our main function, we check if the value returned by the checkPass
+function is zero or not. If it isn't, we find the message: "You are correct :)".
+
+thanks to sudo0x18 for this crackme!
