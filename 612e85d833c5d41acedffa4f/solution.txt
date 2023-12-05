@@ -1,0 +1,19 @@
+In the main function we find:
+
+  else if (magic_number < 10) {
+    loop_iterator = 0;
+    while( true ) {
+      uVar3 = (ulong)loop_iterator;
+      username_length = strlen(username);
+      if (username_length <= uVar3) break;
+      local_58[loop_iterator] = (char)magic_number + username[loop_iterator];
+      loop_iterator = loop_iterator + 1;
+    }
+
+so, this looks like a loop that takes each character from our input string,
+adds our number input as a char to each of our string's characters,
+and saves that into local_58 char array, the password is:
+magic_number + each ASCII code from input str
+
+E.g:
+pepe number = 2 | ASCII: 80 69 80 69 (pepe) -> 82 71 82 71 (rgrg)
